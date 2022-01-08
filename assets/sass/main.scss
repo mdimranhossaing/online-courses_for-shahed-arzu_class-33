@@ -1,0 +1,124 @@
+/* ======================== Google Fonts - Montserrat =========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* ======================== Variables Code =========================*/
+// Text color
+$text_color_1: #191919;
+
+
+// Text hover
+$text_hover_1: #44cdc8;
+
+/* ======================== Reset Code =========================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================== General Code =========================*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ================================================================ 
+--------------------------- Header Area Code Start ----------------
+==================================================================*/
+#header-area {
+  padding: 35px 0;
+
+  .container {
+    width: 65%;
+    margin: 0 auto;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar-brand {
+        .logo {
+          max-width: 100px;
+          min-width: 35px;
+          height: auto;
+        }
+      }
+
+      .navbar-menu {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        .nav-item {
+
+          .nav-link {
+            color: $text_color_1;
+            font-weight: 700;
+            font-size: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+
+            &:hover {
+              color: $text_hover_1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// #header-area {
+//   padding: 35px 0;
+
+//   .container {
+//     width: 80%;
+//     margin: 0 auto;
+
+//     .navbar {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       .navbar-brand {
+//         .logo {
+//           min-width: 40px;
+//           max-width: 100px;
+//           height: auto;
+//         }
+//       }
+
+//       .navbar-menu {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         gap: 0 20px;
+//         list-style: none;
+
+//         .nav-item {
+//           .nav-link {
+//             text-decoration: none;
+//             text-transform: uppercase;
+//             letter-spacing: 1px;
+//             font-weight: 700;
+//             color: $text_color_1;
+//             transition: all 0.3s ease;
+//             cursor: pointer;
+
+//             &:hover {
+//               color: $text_hover_1;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+/* ================================================================ 
+--------------------------- Header Area Code End ----------------
+==================================================================*/
